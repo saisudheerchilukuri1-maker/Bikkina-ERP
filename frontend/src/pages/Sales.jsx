@@ -31,7 +31,7 @@ function Sales() {
 const fetchSales = async () => {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/sales"
+      "http://https://bikkina-erp-production.up.railway.app:5000/api/sales"
     );
 
     const data = await response.json();
@@ -44,7 +44,7 @@ const fetchSales = async () => {
 const fetchPurchaseInvoices = async () => {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/purchases"
+      "http://https://bikkina-erp-production.up.railway.app:5000/api/purchases"
     );
 
     const data = await response.json();
@@ -101,7 +101,7 @@ const fetchPurchaseInvoices = async () => {
     if (editingIndex !== null) {
 
       await fetch(
-        `http://localhost:5000/api/sales/${sales[editingIndex]._id}`,
+        `http://https://bikkina-erp-production.up.railway.app:5000/api/sales/${sales[editingIndex]._id}`,
         {
           method: "PUT",
           headers: {
@@ -114,7 +114,7 @@ const fetchPurchaseInvoices = async () => {
     } else {
 
       await fetch(
-        "http://localhost:5000/api/sales",
+        "http://https://bikkina-erp-production.up.railway.app:5000/api/sales",
         {
           method: "POST",
           headers: {
@@ -150,7 +150,7 @@ const fetchPurchaseInvoices = async () => {
 
   try {
     await fetch(
-      `http://localhost:5000/api/sales/${id}`,
+      `http://https://bikkina-erp-production.up.railway.app:5000/api/sales/${id}`,
       {
         method: "DELETE",
       }
@@ -195,7 +195,7 @@ const receivePayment = async (index) => {
 
   try {
     await fetch(
-      `http://localhost:5000/api/sales/${sale._id}`,
+      `http://https://bikkina-erp-production.up.railway.app:5000/api/sales/${sale._id}`,
       {
         method: "PUT",
         headers: {
@@ -252,7 +252,7 @@ const removeReceivedPayment = async (
 
   try {
     await fetch(
-      `http://localhost:5000/api/sales/${sale._id}`,
+      `http://https://bikkina-erp-production.up.railway.app:5000/api/sales/${sale._id}`,
       {
         method: "PUT",
         headers: {

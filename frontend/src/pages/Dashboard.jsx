@@ -38,7 +38,7 @@ todaysExpenses: 0,
   const fetchDashboard = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/dashboard"
+        "http://https://bikkina-erp-production.up.railway.app:5000/api/dashboard"
       );
 
       const data = await response.json();

@@ -25,7 +25,7 @@ function Expenses() {
 const fetchExpenses = async () => {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/expenses"
+      "https://bikkina-erp-production.up.railway.app"
     );
 
 
@@ -74,7 +74,7 @@ const fetchExpenses = async () => {
     if (editingIndex !== null) {
 
       await fetch(
-        `http://localhost:5000/api/expenses/${expenses[editingIndex]._id}`,
+        `http://https://bikkina-erp-production.up.railway.app:5000/api/expenses/${expenses[editingIndex]._id}`,
         {
           method: "PUT",
           headers: {
@@ -87,7 +87,7 @@ const fetchExpenses = async () => {
     } else {
 
       await fetch(
-        "http://localhost:5000/api/expenses",
+        "http://https://bikkina-erp-production.up.railway.app:5000/api/expenses",
         {
           method: "POST",
           headers: {
@@ -121,7 +121,7 @@ const fetchExpenses = async () => {
 
   try {
     await fetch(
-      `http://localhost:5000/api/expenses/${id}`,
+      `http://https://bikkina-erp-production.up.railway.app:5000/api/expenses/${id}`,
       {
         method: "DELETE",
       }
