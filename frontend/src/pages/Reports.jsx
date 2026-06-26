@@ -12,13 +12,13 @@ useEffect(() => {
 const fetchData = async () => {
   try {
     const purchasesRes = await fetch(
-      "http://https://bikkina-erp-production.up.railway.app:5000/api/purchases"
+      "https://bikkina-erp-production.up.railway.app/api/purchases"
     );
     const salesRes = await fetch(
-      "http://https://bikkina-erp-production.up.railway.app:5000/api/sales"
+      "https://bikkina-erp-production.up.railway.app/api/sales"
     );
     const expensesRes = await fetch(
-      "http://https://bikkina-erp-production.up.railway.app:5000/api/expenses"
+      "https://bikkina-erp-production.up.railway.app/api/expenses"
     );
 
     const purchasesData =

@@ -12,7 +12,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        "http://https://bikkina-erp-production.up.railway.app:5000/api/auth/login",
+        "https://bikkina-erp-production.up.railway.app/api/auth/login",
         {
           method: "POST",
           headers: {
