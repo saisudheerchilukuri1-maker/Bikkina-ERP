@@ -29,7 +29,7 @@ function Purchases() {
 const fetchPurchases = async () => {
   try {
     const response = await fetch(
-      "https://bikkina-erp-production.up.railway.app/api/purchases"
+      "https://bikkina-erp-production-740d.up.railway.app/api/purchases"
     );
 
     const data = await response.json();
@@ -82,7 +82,7 @@ const fetchPurchases = async () => {
     if (editingIndex !== null) {
 
       await fetch(
-        `https://bikkina-erp-production.up.railway.app/api/purchases/${purchases[editingIndex]._id}`,
+        `https://bikkina-erp-production-740d.up.railway.app/api/purchases/${purchases[editingIndex]._id}`,
         {
           method: "PUT",
           headers: {
@@ -96,7 +96,7 @@ const fetchPurchases = async () => {
     } else {
 
       await fetch(
-        "https://bikkina-erp-production.up.railway.app/api/purchases",
+        "https://bikkina-erp-production-740d.up.railway.app/api/purchases",
         {
           method: "POST",
           headers: {
@@ -131,7 +131,7 @@ const fetchPurchases = async () => {
 
   try {
     await fetch(
-      `https://bikkina-erp-production.up.railway.app/api/purchases/${id}`,
+      `https://bikkina-erp-production-740d.up.railway.app/api/purchases/${id}`,
       {
         method: "DELETE",
       }
@@ -176,7 +176,7 @@ const addPayment = async (index) => {
 
   try {
     await fetch(
-      `https://bikkina-erp-production.up.railway.app/api/purchases/${purchase._id}`,
+      `https://bikkina-erp-production-740d.up.railway.app/api/purchases/${purchase._id}`,
       {
         method: "PUT",
         headers: {
@@ -231,7 +231,7 @@ const removePayment = async (index) => {
 
   try {
     await fetch(
-      `https://bikkina-erp-production.up.railway.app/api/purchases/${purchase._id}`,
+      `https://bikkina-erp-production-740d.up.railway.app/api/purchases/${purchase._id}`,
       {
         method: "PUT",
         headers: {

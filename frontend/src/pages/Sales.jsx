@@ -31,7 +31,7 @@ function Sales() {
 const fetchSales = async () => {
   try {
     const response = await fetch(
-      "https://bikkina-erp-production.up.railway.app/api/sales"
+      "https://bikkina-erp-production-740d.up.railway.app/api/sales"
     );
 
     const data = await response.json();
@@ -44,7 +44,7 @@ const fetchSales = async () => {
 const fetchPurchaseInvoices = async () => {
   try {
     const response = await fetch(
-      "https://bikkina-erp-production.up.railway.app/api/purchases"
+      "https://bikkina-erp-production-740d.up.railway.app/api/purchases"
     );
 
     const data = await response.json();
@@ -101,7 +101,7 @@ const fetchPurchaseInvoices = async () => {
     if (editingIndex !== null) {
 
       await fetch(
-        `https://bikkina-erp-production.up.railway.app/api/sales/${sales[editingIndex]._id}`,
+        `https://bikkina-erp-production-740d.up.railway.app/api/sales/${sales[editingIndex]._id}`,
         {
           method: "PUT",
           headers: {
@@ -114,7 +114,7 @@ const fetchPurchaseInvoices = async () => {
     } else {
 
       await fetch(
-        "https://bikkina-erp-production.up.railway.app/api/sales",
+        "https://bikkina-erp-production-740d.up.railway.app/api/sales",
         {
           method: "POST",
           headers: {
@@ -150,7 +150,7 @@ const fetchPurchaseInvoices = async () => {
 
   try {
     await fetch(
-      `https://bikkina-erp-production.up.railway.app/api/sales/${id}`,
+      `https://bikkina-erp-production-740d.up.railway.app/api/sales/${id}`,
       {
         method: "DELETE",
       }
@@ -195,7 +195,7 @@ const receivePayment = async (index) => {
 
   try {
     await fetch(
-      `https://bikkina-erp-production.up.railway.app/api/sales/${sale._id}`,
+      `https://bikkina-erp-production-740d.up.railway.app/api/sales/${sale._id}`,
       {
         method: "PUT",
         headers: {
@@ -252,7 +252,7 @@ const removeReceivedPayment = async (
 
   try {
     await fetch(
-      `https://bikkina-erp-production.up.railway.app/api/sales/${sale._id}`,
+      `https://bikkina-erp-production-740d.up.railway.app/api/sales/${sale._id}`,
       {
         method: "PUT",
         headers: {

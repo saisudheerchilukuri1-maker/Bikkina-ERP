@@ -52,7 +52,7 @@ function Settings() {
 
     try {
       const response = await fetch(
-        "https://bikkina-erp-production.up.railway.app/api/auth/change-password",
+        "https://bikkina-erp-production-740d.up.railway.app/api/auth/change-password",
         {
           method: "PUT",
           headers: {
