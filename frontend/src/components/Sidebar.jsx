@@ -8,6 +8,8 @@ import {
   FaFileAlt,
   FaCog,
   FaSignOutAlt,
+  FaBuilding,
+  FaWarehouse,
 } from "react-icons/fa";
 
 function Sidebar() {
@@ -43,6 +45,21 @@ function Sidebar() {
           <FaChartBar />
           Dashboard
         </NavLink>
+        <NavLink
+  to="/purchase-companies"
+  className="flex items-center gap-3 hover:text-blue-400"
+>
+  <FaBuilding />
+  Purchase Companies
+</NavLink>
+
+<NavLink
+  to="/sale-companies"
+  className="flex items-center gap-3 hover:text-blue-400"
+>
+  <FaWarehouse />
+  Sale Companies
+</NavLink>
 
         <NavLink
           to="/purchases"
