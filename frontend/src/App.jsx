@@ -4,9 +4,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import PurchaseCompanies from "./pages/PurchaseCompanies";
-import SaleCompanies from "./pages/SaleCompanies";
-import CompanyLedger from "./pages/CompanyLedger";
+
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 
@@ -60,32 +58,7 @@ function App() {
             </ProtectedLayout>
           }
         />
-        <Route
-  path="/purchase-companies"
-  element={
-    <ProtectedLayout>
-      <PurchaseCompanies />
-    </ProtectedLayout>
-  }
-/>
-
-<Route
-  path="/sale-companies"
-  element={
-    <ProtectedLayout>
-      <SaleCompanies />
-    </ProtectedLayout>
-  }
-/>
-
-<Route
-  path="/company-ledger/:type/:company"
-  element={
-    <ProtectedLayout>
-      <CompanyLedger />
-    </ProtectedLayout>
-  }
-/>
+        
 
         <Route
           path="/purchases"
